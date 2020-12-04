@@ -6,9 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RotaryWheel.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController <RotaryWheelDelegate>
+@property (nonatomic, strong) UILabel *sectorLabel;
 @end
 

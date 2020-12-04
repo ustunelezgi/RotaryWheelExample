@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B55FE5A2578DC8200EEABE1 /* Sector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B55FE592578DC8200EEABE1 /* Sector.m */; };
 		9BF4986B25778F7900F5819E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4986A25778F7900F5819E /* AppDelegate.m */; };
 		9BF4986E25778F7900F5819E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4986D25778F7900F5819E /* SceneDelegate.m */; };
 		9BF4987125778F7900F5819E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4987025778F7900F5819E /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B55FE582578DC8200EEABE1 /* Sector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sector.h; sourceTree = "<group>"; };
+		9B55FE592578DC8200EEABE1 /* Sector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sector.m; sourceTree = "<group>"; };
 		9BF4986625778F7900F5819E /* RotaryWheelProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryWheelProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF4986925778F7900F5819E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BF4986A25778F7900F5819E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				9BF4987B25778F7C00F5819E /* main.m */,
 				9BF498A12577909300F5819E /* RotaryWheel.h */,
 				9BF498A22577909300F5819E /* RotaryWheel.m */,
+				9B55FE582578DC8200EEABE1 /* Sector.h */,
+				9B55FE592578DC8200EEABE1 /* Sector.m */,
 			);
 			path = RotaryWheelProject;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				9BF4986B25778F7900F5819E /* AppDelegate.m in Sources */,
 				9BF4987C25778F7C00F5819E /* main.m in Sources */,
 				9BF4986E25778F7900F5819E /* SceneDelegate.m in Sources */,
+				9B55FE5A2578DC8200EEABE1 /* Sector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH2F3A4Q35;
 				INFOPLIST_FILE = RotaryWheelProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH2F3A4Q35;
 				INFOPLIST_FILE = RotaryWheelProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
