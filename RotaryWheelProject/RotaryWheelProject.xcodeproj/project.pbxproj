@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B16E3F82582371000B93641 /* GradientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16E3F72582371000B93641 /* GradientVC.m */; };
 		9B55FE5A2578DC8200EEABE1 /* Sector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B55FE592578DC8200EEABE1 /* Sector.m */; };
 		9BF4986B25778F7900F5819E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4986A25778F7900F5819E /* AppDelegate.m */; };
 		9BF4986E25778F7900F5819E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4986D25778F7900F5819E /* SceneDelegate.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B16E3F62582371000B93641 /* GradientVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientVC.h; sourceTree = "<group>"; };
+		9B16E3F72582371000B93641 /* GradientVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientVC.m; sourceTree = "<group>"; };
 		9B55FE582578DC8200EEABE1 /* Sector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sector.h; sourceTree = "<group>"; };
 		9B55FE592578DC8200EEABE1 /* Sector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sector.m; sourceTree = "<group>"; };
 		9BF4986625778F7900F5819E /* RotaryWheelProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryWheelProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B16E3F5258236ED00B93641 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				9B16E3F62582371000B93641 /* GradientVC.h */,
+				9B16E3F72582371000B93641 /* GradientVC.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		9BF4985D25778F7900F5819E = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		9BF4986825778F7900F5819E /* RotaryWheelProject */ = {
 			isa = PBXGroup;
 			children = (
+				9B16E3F5258236ED00B93641 /* Gradient */,
 				9BF4986925778F7900F5819E /* AppDelegate.h */,
 				9BF4986A25778F7900F5819E /* AppDelegate.m */,
 				9BF4986C25778F7900F5819E /* SceneDelegate.h */,
@@ -288,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B16E3F82582371000B93641 /* GradientVC.m in Sources */,
 				9BF4987125778F7900F5819E /* ViewController.m in Sources */,
 				9BF498A32577909300F5819E /* RotaryWheel.m in Sources */,
 				9BF4986B25778F7900F5819E /* AppDelegate.m in Sources */,

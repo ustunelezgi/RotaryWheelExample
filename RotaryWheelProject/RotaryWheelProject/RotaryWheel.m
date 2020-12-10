@@ -81,7 +81,7 @@ static float deltaAngle;
 - (void)setTimer {
     
     for (float i=0.2; i<5.0; i+=0.1) {
-        NSLog(@"i değeri : %f",i);
+        //NSLog(@"i değeri : %f",i);
         [NSTimer scheduledTimerWithTimeInterval:i
                                          target:self
                                        selector:@selector(rotate)
@@ -107,7 +107,7 @@ static float deltaAngle;
     // 1.2 - Filter out touches too close to the center
     if (dist < 40 || dist > 200) {
         // forcing a tap to be on the ferrule
-        NSLog(@"ignoring tap (%f,%f)", touchPoint.x, touchPoint.y);
+        //NSLog(@"ignoring tap (%f,%f)", touchPoint.x, touchPoint.y);
         return NO;
     }
     
@@ -116,12 +116,13 @@ static float deltaAngle;
 
 - (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     CGFloat radians = atan2f(container.transform.b, container.transform.a);
-    NSLog(@"rad is %f", radians);
+    //NSLog(@"rad is %f", radians);
     
     CGPoint pt = [touch locationInView:self];
     float dx = pt.x  - container.center.x;
     float dy = pt.y  - container.center.y;
     float ang = atan2(dy,dx);
+    NSLog(@"angle: %f", ang);
     float angleDifference = deltaAngle - ang;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     return YES;
@@ -187,7 +188,7 @@ static float deltaAngle;
         }
         // 5 - Add sector to array
         [sectors addObject:sector];
-        NSLog(@"cl is %@", sector);
+        //NSLog(@"cl is %@", sector);
     }
 }
 
@@ -210,7 +211,7 @@ static float deltaAngle;
             sector.minValue = fabsf(sector.maxValue);
         }
         mid -= fanWidth;
-        NSLog(@"cl is %@", sector);
+        //NSLog(@"cl is %@", sector);
         // 5 - Add sector to array
         [sectors addObject:sector];
     }
