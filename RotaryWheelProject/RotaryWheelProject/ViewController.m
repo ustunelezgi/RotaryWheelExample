@@ -13,16 +13,28 @@
 @end
 
 @implementation ViewController
-
+@synthesize sectorLabel;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RotaryWheel *wheel = [[RotaryWheel alloc] initWithFrame:CGRectMake(50, 100, 200, 200)
-                                                    andDelegate:self
-                                                   withSections:8];
-    // 3 - Add wheel to view
+    // 1 - Call super method
+    [super viewDidLoad];
+    // 2 - Create sector label
+    //sectorLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 120, 30)];
+    //sectorLabel.textAlignment = UITextAlignmentCenter;
+    [self.view addSubview:sectorLabel];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
+    // 3 - Set up rotary wheel
+    RotaryWheel *wheel = [[RotaryWheel alloc] initWithFrame:CGRectMake(self.view.center.x/6, self.view.center.y/4, 200, 200)
+                                                delegate:self
+                                               withSections:0];
+    wheel.center = CGPointMake(160, 240);
+    // 4 - Add wheel to view
     [self.view addSubview:wheel];
 }
 
+- (void)wheelDidChangeValue:(nonnull NSString *)newValue {
+    self.sectorLabel.text = newValue;
+}
 
 @end
